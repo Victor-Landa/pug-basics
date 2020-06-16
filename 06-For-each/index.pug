@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+  body
+    h1 For/Each Lopp
+
+    each n, i in [1, 2, 3, 4, 5]
+      p= n + " - " + i
+
+    - const names = ["Victor", "Paola", "Chopper"]
+    each n, i in names
+      p= n + " - " + i
+
+    - const grades = {"Web dev": 90, "Software design": 78}
+    each n, i in grades
+      p= n + " - " + i
+
+    for n, i in grades
+      p= n + " - " + i
+
+    for n, i in []
+      p= n + " - " + i
+    else
+      strong No values are here
