@@ -2,4 +2,17 @@ doctype html
 html
   head
   body
-    
+    input(type="password" name="password-input" data-js=`${ 5 > 1 ? "true" : "false" }`)
+
+    - const myClasses = ["class1", "class2", "class3"]
+    div.container(class=myClasses)
+
+    - const myStyles = {"color": "red", "background-color": "blue"}
+    div(style=myStyles)
+
+    - const myAttributes = {"src": "expamplePhoto.png", "alt": "Example photo"}
+    img&attributes(myAttributes)
+
+    input(type="text" disabled)
+
+    input(type="email" disabled=true)
